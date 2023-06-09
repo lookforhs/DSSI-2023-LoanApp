@@ -10,14 +10,14 @@ import pickle
 
 # load the model.pkl
 
-path = r'https://github.com/lookforhs/DSSI-2023-LoanApp/model.pkl'
+#path = r'https://github.com/lookforhs/DSSI-2023-LoanApp/model.pkl'
 with open('model.pkl', "rb") as f:
 	model = pickle.load(f)
 
 # Streamlit provides a caching mechanism that allows your app to stay performant 
 # even when loading data from the web, manipulating large datasets, 
 # or performing expensive computations. This is done with the @st.cache decorator.
-@st.cache()
+#@st.cache()
 
 def prediction(int_rate, emp_length, annual_inc, delinq_2yrs, fico_range_high,revol_bal, open_acc):
 	# Making predictions
